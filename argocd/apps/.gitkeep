@@ -1,0 +1,2 @@
+# This directory contains ArgoCD Application definitions
+# Each YAML file represents an application to be deployed

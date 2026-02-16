@@ -12,7 +12,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/kirtquist/edgeshop-gitops.git
-    targetRevision: main
+    targetRevision: master
     path: argocd/apps
   destination:
     server: https://kubernetes.default.svc

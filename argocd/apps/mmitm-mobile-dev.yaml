@@ -16,7 +16,7 @@ spec:
     targetRevision: main
     path: k8s/overlays/dev
   destination:
-    server: https://kubernetes.default.svc
+    name: edgeshop-nuc
     namespace: dev
   syncPolicy:
     automated:

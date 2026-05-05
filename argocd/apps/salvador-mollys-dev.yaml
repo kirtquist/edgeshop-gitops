@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: mobile-task-dev
+  name: smollys-site-dev
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io

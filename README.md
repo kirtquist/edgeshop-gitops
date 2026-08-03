@@ -127,6 +127,16 @@ spec:
 2. Check if the path exists in the source repository
 3. Verify target namespace exists or can be created
 
+### Private repository auth (`recipe-app-dev`)
+
+If `recipe-app-dev` shows `authentication required` or `Repository not found`:
+
+1. Confirm ArgoCD CLI is logged in (port-forward + `argocd login localhost:8080 --username admin --insecure`).
+2. From `recipe-app`, run `GH_TOKEN=<fine-grained-pat> npm run argocd-auth`.
+3. Confirm the PAT has **Contents: Read** on `kirtquist/recipe-app` and has not expired.
+
+See [recipe-app/docs/SETUP.md](../recipe-app/docs/SETUP.md#argocd-github-auth-private-repos) for the full runbook.
+
 ## Repository Management
 
 - **Main Branch**: Contains production-ready configurations
